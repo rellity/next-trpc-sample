@@ -1,0 +1,5 @@
+-- CreateTable
+CREATE TABLE "Todos" (
+    "id" TEXT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "data" TEXT NOT NULL
+);
