@@ -6,8 +6,7 @@ const prisma = new PrismaClient();
 
 export const appRouter = router({
     getallTodos: publicProcedure.query(async ()=> {
-        const todos = await prisma.todos.findMany()
-        return todos
+        return await prisma.todos.findMany()
     }),
 
     getTodobyID: publicProcedure.input(z.number()).query(
